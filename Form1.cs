@@ -16,7 +16,7 @@ namespace SPEECHRECOGNITION
 {
     public partial class Form1 : Form
     {
-        SpeechSynthesizer aiVoice;
+        SpeechSynthesizer Voice;
         Choices list;
         SpeechRecognitionEngine recEngine;
         public Form1()
@@ -26,8 +26,8 @@ namespace SPEECHRECOGNITION
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            aiVoice = new SpeechSynthesizer();
-            aiVoice.SelectVoiceByHints(VoiceGender.Female);
+            Voice = new SpeechSynthesizer();
+            Voice.SelectVoiceByHints(VoiceGender.Female);
 
             list = new Choices();
             list.Add(new string[] {"hello","kohomada","what time is it","what is today","open browser"});
@@ -51,7 +51,7 @@ namespace SPEECHRECOGNITION
 
         public void say(string sayText)
         {
-            aiVoice.SpeakAsync(sayText);
+            Voice.SpeakAsync(sayText);
         }
 
         private void RecEngine_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
