@@ -12,7 +12,7 @@ using System.Speech.Recognition;
 using System.Diagnostics;
 using System.Windows.Forms.VisualStyles;
 
-namespace AI
+namespace SPEECHRECOGNITION
 {
     public partial class Form1 : Form
     {
