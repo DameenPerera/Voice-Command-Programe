@@ -1,1 +1,1 @@
-It is possible that control computer by voice commands now
+It is possible that controling computer by voice commands now
